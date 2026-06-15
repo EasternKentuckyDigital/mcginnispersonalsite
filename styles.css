@@ -59,7 +59,8 @@ a {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 8px 22px;
-  color: var(--muted);
+  margin-left: auto;
+  color: var(--accent-deep);
   font-size: 0.92rem;
   font-weight: 500;
 }
@@ -68,7 +69,6 @@ a {
   text-decoration: none;
 }
 
-.nav-links a[aria-current="page"],
 .nav-links a:hover {
   color: var(--accent-deep);
 }
@@ -163,15 +163,6 @@ h1 {
 
   .hero {
     grid-template-columns: 1fr;
-  }
-
-  .site-header {
-    display: grid;
-    gap: 12px;
-  }
-
-  .nav-links {
-    justify-content: flex-start;
   }
 
   .hero {
