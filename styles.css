@@ -42,6 +42,8 @@ a {
 .site-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 24px;
   padding: 28px 0 22px;
   border-bottom: 1px solid var(--rule);
 }
@@ -50,6 +52,25 @@ a {
   color: var(--ink);
   font-weight: 720;
   text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 22px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.nav-links a[aria-current="page"],
+.nav-links a:hover {
+  color: var(--accent-deep);
 }
 
 .hero {
@@ -92,17 +113,13 @@ h1 {
 .lede {
   max-width: 560px;
   margin-bottom: 16px;
-  color: #2b3545;
-  font-size: clamp(1.18rem, 2vw, 1.44rem);
-  line-height: 1.55;
-}
-
-.bio-note {
-  max-width: 560px;
-  margin-bottom: 0;
   color: var(--muted);
   font-size: 1.02rem;
   line-height: 1.7;
+}
+
+.lede:last-of-type {
+  margin-bottom: 0;
 }
 
 .portrait-frame {
@@ -130,6 +147,11 @@ h1 {
   box-shadow: var(--shadow);
 }
 
+.wip-page {
+  max-width: 660px;
+  padding: clamp(72px, 12vw, 140px) 0;
+}
+
 @media (max-width: 780px) {
   body {
     font-size: 17px;
@@ -141,6 +163,15 @@ h1 {
 
   .hero {
     grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    display: grid;
+    gap: 12px;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
   }
 
   .hero {
