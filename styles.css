@@ -228,7 +228,7 @@ h1 {
 .cv-entry-body new {
   color: var(--muted);
   font-size: 0.96rem;
-  line-height: 1.68;
+  line-height: 1.42;
 }
 
 .cv-entry-body p {
