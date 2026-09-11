@@ -225,6 +225,12 @@ h1 {
   line-height: 1.68;
 }
 
+.cv-entry-body new {
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.68;
+}
+
 .cv-entry-body p {
   margin-bottom: 10px;
 }
